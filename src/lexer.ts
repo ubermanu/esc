@@ -79,7 +79,7 @@ export class Lexer {
           value += this.input[this.position]
           this.position++
         }
-        tokens.push({ type: 'NUMBER', value })
+        addToken('NUMBER', value)
         continue
       }
 
@@ -94,9 +94,9 @@ export class Lexer {
           this.position++
         }
         if (keywords.includes(value)) {
-          tokens.push({ type: 'KEYWORD', value })
+          addToken('KEYWORD', value)
         } else {
-          tokens.push({ type: 'IDENTIFIER', value })
+          addToken('IDENTIFIER', value)
         }
         continue
       }
