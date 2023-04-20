@@ -1,0 +1,9 @@
+{
+  "name": "esc",
+  "private": true,
+  "prettier": "@ubermanu/prettier-config",
+  "devDependencies": {
+    "prettier": "^2.8.7",
+    "@ubermanu/prettier-config": "^1.7.1"
+  }
+}
